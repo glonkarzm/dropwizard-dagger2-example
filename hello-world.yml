@@ -1,2 +1,3 @@
 template: Hello, %s!
-defaultName: Stranger
+defaultName: StrangerDanger
+fromConfig: I am just from the configs!

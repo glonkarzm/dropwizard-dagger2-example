@@ -26,7 +26,8 @@ public class ExampleApplication extends Application<ExampleConfiguration> {
                     Environment environment) {
       final ExampleResource resource = new ExampleResource(
         configuration.getTemplate(),
-        configuration.getDefaultName()
+        configuration.getDefaultName(),
+        configuration.getFromConfig()
       );
       final TemplateHealthCheck healthCheck =
         new TemplateHealthCheck(configuration.getTemplate());

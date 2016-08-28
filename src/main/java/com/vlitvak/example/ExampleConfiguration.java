@@ -11,6 +11,9 @@ public class ExampleConfiguration extends Configuration {
     @NotEmpty
     private String defaultName = "Stranger";
 
+    @NotEmpty
+    private String fromConfig;
+
     @JsonProperty
     public String getTemplate() {
         return template;
@@ -29,5 +32,10 @@ public class ExampleConfiguration extends Configuration {
     @JsonProperty
     public void setDefaultName(String name) {
         this.defaultName = name;
+    }
+
+    @JsonProperty
+    public String getFromConfig() {
+        return fromConfig;
     }
 } 

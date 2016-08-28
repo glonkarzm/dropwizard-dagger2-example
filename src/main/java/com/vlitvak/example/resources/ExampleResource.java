@@ -16,9 +16,11 @@ import java.util.concurrent.atomic.AtomicLong;
 @Produces(MediaType.APPLICATION_JSON)
 public class ExampleResource {
     private final AtomicLong counter;
+    private final String fromConfig;
 
-    public ExampleResource(String template, String defaultName) {
+    public ExampleResource(String template, String defaultName, String fromConfig) {
         this.counter = new AtomicLong();
+        this.fromConfig = fromConfig;
     }
 
     @GET
@@ -30,6 +32,10 @@ public class ExampleResource {
           throw new Exception("name is required!");
         }
         String value = name;
-        return new Saying(counter.incrementAndGet(), value);
+        return new Saying(
+          counter.incrementAndGet(), 
+          value,
+          fromConfig
+        );
     }
 } 

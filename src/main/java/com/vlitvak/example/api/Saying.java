@@ -10,13 +10,16 @@ public class Saying {
     @Length(max = 3)
     private String content;
 
+    private String fromConfig;
+
     public Saying() {
         // Jackson deserialization
     }
 
-    public Saying(long id, String content) {
+    public Saying(long id, String content, String fromConfig) {
         this.id = id;
         this.content = content;
+        this.fromConfig = fromConfig;
     }
 
     @JsonProperty
@@ -27,6 +30,11 @@ public class Saying {
     @JsonProperty
     public String getContent() {
         return content;
+    }
+
+    @JsonProperty
+    public String getFromConfig() {
+        return this.fromConfig;
     }
 
     @Override
