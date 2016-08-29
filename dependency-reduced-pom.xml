@@ -128,7 +128,7 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <dropwizard.version>0.9.1</dropwizard.version>
+    <dropwizard.version>1.0.0</dropwizard.version>
     <mainClass>com.vlitvak.example.ExampleApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <dagger.version>2.2</dagger.version>

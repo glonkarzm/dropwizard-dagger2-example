@@ -2,3 +2,8 @@ template: Hello, %s!
 defaultName: Clorox
 fromConfig: Dummy Movie
 env: test
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 8080
