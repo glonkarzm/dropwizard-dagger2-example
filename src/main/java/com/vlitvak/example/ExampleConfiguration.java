@@ -1,10 +1,13 @@
 package com.vlitvak.example;
 
 import io.dropwizard.Configuration;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class ExampleConfiguration extends Configuration {
+
     @NotEmpty
     private String template;
 
@@ -13,6 +16,9 @@ public class ExampleConfiguration extends Configuration {
 
     @NotEmpty
     private String fromConfig;
+
+    @NotEmpty
+    private String env;
 
     @JsonProperty
     public String getTemplate() {
@@ -36,6 +42,11 @@ public class ExampleConfiguration extends Configuration {
 
     @JsonProperty
     public String getFromConfig() {
-        return fromConfig;
+      return fromConfig;
     }
-} 
+
+    @JsonProperty
+    public String getEnv() {
+      return env;
+    }
+}

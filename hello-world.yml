@@ -1,3 +1,4 @@
 template: Hello, %s!
 defaultName: StrangerDanger
 fromConfig: I am just from the configs!
+env: development

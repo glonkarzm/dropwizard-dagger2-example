@@ -131,6 +131,7 @@
     <dropwizard.version>0.9.1</dropwizard.version>
     <mainClass>com.vlitvak.example.ExampleApplication</mainClass>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <dagger.version>2.2</dagger.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>

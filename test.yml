@@ -1,0 +1,4 @@
+template: Hello, %s!
+defaultName: Clorox
+fromConfig: Dummy Movie
+env: test
