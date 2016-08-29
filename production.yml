@@ -2,3 +2,9 @@ template: Hello, %s!
 defaultName: Jon Wick
 fromConfig: Real Movie
 env: production
+
+server:
+  applicationConnectors:
+  - type: http
+    port: 8080
+
